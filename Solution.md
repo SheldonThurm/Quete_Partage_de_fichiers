@@ -53,9 +53,14 @@ Nous allons configurer les droits d'acces :
 
 ### Test avec les Clients
 => Sur une VM client connectez vous avec Client3 (pour rappel, cet utilisateur fait partie du groupe RH)
+=> Mappe un lecteur réseau : 
+```PowerShell
+New-PSDrive -Name "Z" -PSProvider FileSystem -Root "\\WinServ\Docs" -Persist
+```
 => Dans explorateur de fichier clique sur **Réseau**
 => Renseigne le chemin du dossier partagé, ici **\\WinServ\Docs** (WinServ est ici le nom du serveur Windows)
-=> Double clique 
+=> Double clique sur le document **RH** -> possibilité de créer des fichiers et documents
+=> Impossible de le faire sur les autres documents "Direction" et "Comptabilité"
 
 
 
