@@ -47,9 +47,15 @@ Maintenant nous avons un dossier visible par les utilisateur de l'AD.
 Nous allons configurer les droits d'acces :
 
 => Ouvrir l'explorateur de fichier -> C:\Documents_Entreprise
-=> Clique droit sur le dossier **Comptabilité**
+=> Clique droit sur le dossier **Comptabilité** -> **Propertie** -> **Sharing** -> **Share** -> Dans la barre de recherche tape "Comptabilité" et "Direction" -> Modifier les droits en "Read/Write" -> **Share**
+=> Clique droit sur le dossier **RH** -> **Propertie** -> **Sharing** -> **Share** -> Dans la barre de recherche tape "RH" et "Direction" -> Modifier les droits en "Read/Write" -> **Share**
+=> Clique droit sur le dossier **Direction** -> **Propertie** -> **Sharing** -> **Share** -> Dans la barre de recherche tape "Direction" -> Modifier les droits en "Read/Write" -> **Share**
 
-
+### Test avec les Clients
+=> Sur une VM client connectez vous avec Client3 (pour rappel, cet utilisateur fait partie du groupe RH)
+=> Dans explorateur de fichier clique sur **Réseau**
+=> Renseigne le chemin du dossier partagé, ici **\\WinServ\Docs** (WinServ est ici le nom du serveur Windows)
+=> Double clique 
 
 
 
